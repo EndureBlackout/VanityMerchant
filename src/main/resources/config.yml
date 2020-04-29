@@ -1,0 +1,62 @@
+Combat:
+    
+Mining:
+    EffI:
+        type: legacy_diamond_pickaxe
+        enchants:
+            - dig_speed,1
+            - durability,3
+        price: 5
+    EffII:
+        type: legacy_diamond_pickaxe
+        enchants:
+            - dig_speed,2
+            - durability,3
+        price: 10
+    EffIII:
+        type: legacy_diamond_pickaxe
+        enchants:
+            - dig_speed,3
+            - durability,3
+        price: 15
+    EffIIII:
+        type: legacy_diamond_pickaxe
+        enchants:
+            - dig_speed,4
+            - durability,3
+        price: 20
+Misc:
+    tokens:
+        item: nether_star
+        name: '&1&l(&6Armor Token!&1&l)'
+        lore:
+        - '&8/mg shop'
+        - '&7&k/mggshop'
+        price: 25
+        amount: 5
+    pots:
+        item: splash_healing
+        name: '&rSplash Potion of Healing'
+        lore:
+        price: 3
+        amount: 5
+    redstone:
+        item: redstone
+        name: '&rRedstone Dust'
+        lore:
+        price: 3
+        amount: 20
+    bread:
+        item: bread
+        name: '&rBread'
+        lore:
+        price: 3
+        amount: 20
+    crystal:
+        item: dragon_egg
+        name: '&1&l(&8Mystical Crystal&1&l)'
+        lore:
+        - '&d/mc use'
+        - '&7&k/mccuse'
+        price: 30
+        amount: 5

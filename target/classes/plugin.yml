@@ -1,0 +1,10 @@
+name: VanityMerchant
+main: org.vanitycraft.VanityMerchant.MerchantMain
+version: 1.0
+description: Merchant plugin for vanitycraft
+author: [EndureBlackout]
+commands:
+  merchant:
+    description: Main VanityMerchant command.
+  merch:
+    description: Alias for merchant command.
