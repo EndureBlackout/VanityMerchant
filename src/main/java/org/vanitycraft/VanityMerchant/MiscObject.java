@@ -76,8 +76,8 @@ public class MiscObject {
 			pMeta.addCustomEffect(heal, true);
 			pMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
 			
-			
 			miscItem.setItemMeta(pMeta);
+			miscItem.setAmount(amount);
 		} else	{
 			miscItem = new ItemStack(Material.getMaterial(item.toUpperCase()));
 			ItemMeta miscMeta = miscItem.getItemMeta();
