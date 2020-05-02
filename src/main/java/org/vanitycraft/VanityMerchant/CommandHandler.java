@@ -31,28 +31,55 @@ public class CommandHandler implements CommandExecutor, Listener {
 
 				}
 
+				if (args.length == 1) {
+					if (args[0].equalsIgnoreCase("points")) {
+						Account account = new Account(p.getName(), p.getUniqueId(), core);
+
+						if (account.doesAccountExist()) {
+							p.sendMessage(ChatColor.DARK_GREEN + "You have " + account.getPoints() + " points.");
+						}
+					}
+				}
+
+				if (args.length == 2) {
+					if (args[0].equalsIgnoreCase("points")) {
+						String pName = args[1];
+
+						for (Player target : Bukkit.getOnlinePlayers()) {
+							if (target.getName().equalsIgnoreCase(pName)) {
+								Account account = new Account(target.getName(), target.getUniqueId(), core);
+
+								if (account.doesAccountExist()) {
+									p.sendMessage(ChatColor.DARK_GREEN + target.getName() + " has "
+											+ account.getPoints() + " points.");
+								}
+							}
+						}
+					}
+				}
+
 				if (args.length == 4) {
-					if(args[0].equalsIgnoreCase("points")) {
-						if(args[1].equalsIgnoreCase("give") && isInteger(args[3])) {
+					if (args[0].equalsIgnoreCase("points")) {
+						if (args[1].equalsIgnoreCase("give") && isInteger(args[3])) {
 							String pName = args[2];
 							int add = Integer.parseInt(args[3]);
-							
-							for(Player target : Bukkit.getOnlinePlayers()) {
-								if(target.getName().equalsIgnoreCase(pName)) {
+
+							for (Player target : Bukkit.getOnlinePlayers()) {
+								if (target.getName().equalsIgnoreCase(pName)) {
 									UUID puuid = target.getUniqueId();
-									
+
 									Account account = new Account(target.getName(), puuid, core);
-									
-									if(account.doesAccountExist()) {
+
+									if (account.doesAccountExist()) {
 										int points = account.getPoints();
-										
-										
+
 										points += add;
-										
+
 										account.setPoints(points);
 										account.saveUser();
-										
-										p.sendMessage(ChatColor.DARK_GREEN + "You just gave " + target.getName() + add + " points and they now have a total of " + account.getPoints());
+
+										p.sendMessage(ChatColor.DARK_GREEN + "You just gave " + target.getName() + " "
+												+ add + " points and they now have a total of " + account.getPoints());
 									}
 								}
 							}
@@ -64,7 +91,7 @@ public class CommandHandler implements CommandExecutor, Listener {
 
 		return true;
 	}
-	
+
 	public boolean isInteger(String s) {
 		try {
 			Integer.parseInt(s);

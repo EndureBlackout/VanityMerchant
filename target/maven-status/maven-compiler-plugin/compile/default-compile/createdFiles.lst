@@ -1,6 +1,8 @@
 org\vanitycraft\VanityMerchant\MerchantEventHandler$2.class
 org\vanitycraft\VanityMerchant\MerchantEventHandler.class
 org\vanitycraft\VanityMerchant\MerchantEventHandler$1.class
+org\vanitycraft\VanityMerchant\MerchantEventHandler$6.class
+org\vanitycraft\VanityMerchant\MerchantEventHandler$5.class
 org\vanitycraft\VanityMerchant\MineObject.class
 org\vanitycraft\VanityMerchant\Account.class
 org\vanitycraft\VanityMerchant\CommandHandler.class
