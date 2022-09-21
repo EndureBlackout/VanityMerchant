@@ -28,11 +28,13 @@ public class MerchantEventHandler implements Listener {
 
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e) {
+		System.out.println("In event");
 		Player p = e.getPlayer();
 
 		Account account = new Account(p.getName(), p.getUniqueId(), core);
 
 		if (!account.doesAccountExist()) {
+			System.out.println("No user account... going to create.");
 			account.saveUser();
 		}
 	}

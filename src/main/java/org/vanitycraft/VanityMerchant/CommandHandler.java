@@ -37,6 +37,9 @@ public class CommandHandler implements CommandExecutor, Listener {
 
 						if (account.doesAccountExist()) {
 							p.sendMessage(ChatColor.DARK_GREEN + "You have " + account.getPoints() + " points.");
+						} else {
+							account.saveUser();
+							p.sendMessage(ChatColor.DARK_GREEN + "You have " + account.getPoints() + " points.");
 						}
 					}
 				}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.vanitycraft.VanityMerchant.AppTest" time="0.005" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.vanitycraft.VanityMerchant.AppTest" time="0.009" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -27,7 +27,7 @@
     <property name="user.variant" value=""/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10765079828510632257.tmp"/>
+    <property name="classworlds.conf" value="C:\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9352814124224736589.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-19/bin/server;C:/Program Files/Java/jdk-19/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\;C:\Program Files\Calibre2\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\confluent;C:\Program Files\PuTTY\;C:\Users\jake.ellingson\AppData\Local\Microsoft\WindowsApps;C:\Users\jake.ellingson\.dotnet\tools;C:\Users\jake.ellingson\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jake.ellingson\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\jake.ellingson\AppData\Local\gitkraken\bin;C:\confluent;;C:\Users\jake.ellingson\AppData\Local\Programs\Fiddler;C:\Windows\system32;;."/>
@@ -61,5 +61,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="org.vanitycraft.VanityMerchant.AppTest" name="testApp" time="0.005"/>
+  <testcase classname="org.vanitycraft.VanityMerchant.AppTest" name="testApp" time="0.009"/>
 </testsuite>

@@ -102,11 +102,13 @@ public class Account {
 
 	public void saveUser() {
 		try {
+			System.out.println("In saveUser");
 			File pFile = new File(core.getDataFolder(), "users.yml");
 			YamlConfiguration userConfig = YamlConfiguration.loadConfiguration(pFile);
 
 			Set<String> users = userConfig.getKeys(false);
 
+			System.out.println("Going to loop");
 			for (String id : users) {
 				if (this.uuid.toString().equalsIgnoreCase(id)) {
 					ConfigurationSection user = userConfig.getConfigurationSection(id);
@@ -119,6 +121,11 @@ public class Account {
 					return;
 				}
 			}
+			
+			userConfig.set(this.uuid + ".name", this.name);
+			userConfig.set(this.uuid + ".points", this.points);
+			
+			userConfig.save(pFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
